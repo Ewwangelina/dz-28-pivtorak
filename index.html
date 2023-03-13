@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const img = [
+        "./image/01.PNG",
+        './image/02.PNG',
+        './image/03.PNG',
+        './image/04.PNG',
+        './image/05.PNG',
+        './image/06.PNG',
+        './image/07.PNG',
+        './image/08.PNG',
+        './image/09.PNG',
+        './image/010.PNG',
+    ];
+    const randomIndex = Math.floor(Math.random() * img.length);
+    const randomImage = img[randomIndex];
+    const imagePath = '' + randomImage;
+    const imgElement = document.createElement('img');
+    imgElement.src = imagePath;
+    document.body.appendChild(imgElement);
+    </script>
+
+</body>
+</html>
